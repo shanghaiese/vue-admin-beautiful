@@ -14,11 +14,11 @@
       <a-col
         v-for="(item, index) in queryIcon"
         :key="index"
-        :lg="2"
-        :md="3"
-        :sm="8"
-        :xl="2"
-        :xs="6"
+        :lg="12"
+        :md="8"
+        :sm="24"
+        :xl="4"
+        :xs="12"
       >
         <a-card shadow="hover" @click="handleCopyIcon(item, $event)">
           <vab-icon :icon="item"></vab-icon>

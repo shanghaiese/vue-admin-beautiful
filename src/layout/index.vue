@@ -1,5 +1,5 @@
 <template>
-  <a-layout class="vab-layout-wrap">
+  <a-layout v-if="routes != 'ads'" class="vab-layout-wrap">
     <div
       v-if="device === 'mobile' && !collapse"
       class="vab-mask"
@@ -49,6 +49,9 @@
       <vab-tabs />
       <vab-content />
     </a-layout>
+  </a-layout>
+  <a-layout v-else class="vab-layout-wrap">
+    <div></div>
   </a-layout>
 </template>
 <script>
@@ -121,6 +124,7 @@
           this.toggleDevice(isMobile ? 'mobile' : 'desktop')
           this.width = width
         }
+        console.log(this.$route)
       },
     },
   }

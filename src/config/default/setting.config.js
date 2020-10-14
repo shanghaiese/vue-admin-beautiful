@@ -30,11 +30,11 @@ const setting = {
   //pro版本copyright可随意修改
   copyright: 'chuzhixin 1204505056@qq.com',
   //缓存路由的最大数量
-  keepAliveMaxNum: 99,
+  keepAliveMaxNum: 2,
   //路由模式，可选值为 history 或 hash
   routerMode: 'hash',
   //不经过token校验的路由
-  routesWhiteList: ['/login', '/register', '/callback', '/404', '/403'],
+  routesWhiteList: ['/login', '/register', '/callback', '/404', '/403', '/ads'],
   //加载时显示文字
   loadingText: '正在加载中...',
   //token名称

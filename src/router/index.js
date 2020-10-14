@@ -8,6 +8,11 @@ export const constantRoutes = [
     hidden: true,
   },
   {
+    path: '/ads',
+    component: () => import('@/views/ads'),
+    hidden: true,
+  },
+  {
     path: '/403',
     name: '403',
     component: () => import('@/views/403'),
