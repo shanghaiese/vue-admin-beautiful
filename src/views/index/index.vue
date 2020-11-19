@@ -416,7 +416,7 @@
               },
               data: [
                 {
-                  name: 'vue-admin-beautiful',
+                  name: '3www',
                   value: 15000,
                 },
                 {

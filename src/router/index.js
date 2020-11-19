@@ -382,28 +382,51 @@ export const asyncRoutes = [
       },
     ],
   },
-  // {
-  //   path: '/carmap',
-  //   component: Layout,
-  //   redirect: 'noRedirect',
-  //   name: 'Carmap',
-  //   meta: {
-  //     title: '地图',
-  //     icon: 'shopping-cart',
-  //     permissions: ['admin'],
-  //   },
-  //   children: [
-  //     {
-  //       path: 'carmapDetail',
-  //       name: 'CarmapDetail',
-  //       component: () => import('@/views/carmap/carmapDetail/index'),
-  //       meta: {
-  //         title: '车地图',
-  //         noKeepAlive: true,
-  //       },
-  //     },
-  //   ],
-  // },
+  {
+    path: '/carmap',
+    component: Layout,
+    redirect: 'noRedirect',
+    name: 'Carmap',
+    meta: {
+      title: '地图',
+      permissions: ['admin'],
+    },
+    children: [
+      {
+        path: 'carmapDetail',
+        name: 'CarmapDetail',
+        component: () => import('@/views/carmap/carmapDetail/index'),
+        meta: {
+          title: '车地图',
+          icon: 'shopping-cart',
+          noKeepAlive: true,
+        },
+      },
+    ],
+  },
+  {
+    path: '/buildingSell',
+    component: Layout,
+    redirect: 'noRedirect',
+    name: 'BuildingSell',
+    meta: {
+      title: '售楼',
+      permissions: ['admin'],
+    },
+    children: [
+      {
+        path: 'buildingSellDetail',
+        name: 'BuildingSellDetail',
+        component: () =>
+          import('@/views/buildingSell/buildingSellDetail/index'),
+        meta: {
+          title: '售楼',
+          icon: 'shopping-cart',
+          noKeepAlive: true,
+        },
+      },
+    ],
+  },
   {
     path: '*',
     redirect: '/404',

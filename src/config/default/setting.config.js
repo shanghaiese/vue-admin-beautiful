@@ -17,8 +17,10 @@ const setting = {
     process.env.NODE_ENV === 'development'
       ? 'vab-mock-server'
       : 'vab-mock-server',
+  //加载时现实的主标题
+  loadtitle: '加载中1...',
   //标题 （包括初次加载雪花屏的标题 页面的标题 浏览器的标题）
-  title: 'vue-admin-beautiful',
+  title: 'QYB权易宝',
   //简写
   abbreviation: 'vab',
   //开发环境端口号
